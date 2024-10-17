@@ -26,9 +26,6 @@ function showRecipe(cocktail) {
             title = 'Piña Colada';
             description = 'Ingredients: 2 oz Rum, 1 oz Coconut Cream, 1 oz Pineapple Juice. Blend with ice and serve with a pineapple slice.';
             break;
-        default:
-            title = '';
-            description = '';
     }
 
     document.getElementById('recipe-title').innerText = title;
