@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cocktail Recipes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+       
+        <h1>Cocktail Vibes</h1>
+    
+        <nav>
+            <ul>
+                <li><a href="#gin">Gin</a></li>
+                <li><a href="#whiskey">Whiskey</a></li>
+                <li><a href="#rum">Rum</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+    <section id="gin">
+        <h2>🍸 Gin Cocktails</h2>
+        <div class="cocktail-list">
+            <div class="cocktail" onclick="showRecipe('gin-martini')">
+                <img src="images/gin-martini.jpg" alt="Gin Martini">
+                <h3>Gin Martini</h3>
+                <p>A classic cocktail, shaken or stirred, with a twist of lemon.</p>
+            </div>
+            <div class="cocktail" onclick="showRecipe('negroni')">
+                <img src="images/negroni.jpg" alt="Negroni">
+                <h3>Negroni</h3>
+                <p>An equal mix of gin, Campari, and sweet vermouth.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="whiskey">
+        <h2>🥃 Whiskey Cocktails</h2>
+        <div class="cocktail-list">
+            <div class="cocktail" onclick="showRecipe('old-fashioned')">
+                <img src="images/old-fashioned.jpeg" alt="Old Fashioned">
+                <h3>Old Fashioned</h3>
+                <p>A simple mix of whiskey, sugar, and bitters.</p>
+            </div>
+            <div class="cocktail" onclick="showRecipe('whiskey-sour')">
+                <img src="images/whiskey-sour.jpg" alt="Whiskey Sour">
+                <h3>Whiskey Sour</h3>
+                <p>A refreshing blend of whiskey, lemon juice, and sugar.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="rum">
+        <h2>🍹 Rum Cocktails</h2>
+        <div class="cocktail-list">
+            <div class="cocktail" onclick="showRecipe('mojito')">
+                <img src="images/mojito.jpg" alt="Mojito">
+                <h3>Mojito</h3>
+                <p>A refreshing mix of rum, mint, lime, and soda.</p>
+            </div>
+            <div class="cocktail" onclick="showRecipe('piña-colada')">
+                <img src="images/pinacolada.jpg" alt="Piña Colada">
+                <h3>Piña Colada</h3>
+                <p>A tropical blend of rum, coconut cream, and pineapple juice.</p>
+            </div>
+        </div>
+    </section>
+
+    <div id="recipe-info" class="info">
+        <div class="info-content">
+            <span class="close" onclick="closeInfo()">&times;</span>
+            <h2 id="recipe-title"></h2>
+            <p id="recipe-description"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
